@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo--menu:#A53D3D;
+    --text-color:#CE6316; 
+    --fondo-header:#4A3C0F;
+    --text-header:#DDB41E;
+    box-sizing: border-box;
+}
+htm{
+    /*font-size: 20px;*/
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    width: 100%;
+    /*margin-left: 2.5%;*/
+}
+.menu{
+    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 125px;
+   /* background-color: var(--fondo--menu);*/
+    background-image: url(/assets/img/fondo-3d-cubos-blancos_23-2150472987.avif);
+   /*/assets/img/Presentación\ Portafolio\ Creativo\ Artístico\ Colorido.png*/
+  /* backdrop-filter: blur(75%);*/
+    /*border: 2px solid red;*/
+    display: flex;
+   /* align-items:center;*/
+    align-content: center;
+    justify-content:space-around;
+    align-items: start;
+   gap:20px;
+}
+.men-hijo{
+    /*position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  /*  border: 2px solid red;*/
+    display: flex;
+   /*align-items: center;*/
+    justify-content: space-between;
+    align-content: space-between;
+    gap:10px;
+    /*list-style: none;*/*/
+     
+}
+.menu-item{
+    border-radius: 15px;
+}
+.menu-item a{  
+    text-decoration: none;
+    color: var(--text-color); 
+    font-size: 16px;
+   /* padding: 0 10px;*/
+    text-transform: uppercase;
+}
+.menu-item:hover{
+    background-color: rgba(84, 59, 226, 0.637);
+    transition: 2s;
+}
+.logo{
+    position: relative;
+    background-color: rgb(61, 34, 18);
+    max-width: 90px;
+    max-height: 140px;
+    height: 110px;
+    border-radius: 10% 0 0 10%;
+    border: 10px solid rgba(17, 17, 17, 0.856);
+    border-right: 2px solid;
+    border-right-style:double;
+    border-top-style: revert-layer;
+    margin: 10px 0 0 20px;
+    box-shadow: 5px 10px 2.5px 0 rgba(0, 0, 0, 0.507);
+    transform: rotate(10deg);
+}
+.logo img{
+    max-width:80%;
+    position:relative;
+    top: 10px;
+    right: 10px;
+    bottom: 0;
+    left: 10px;
+    height: 85px;
+    padding:0;
+    border: 1px solid black;
+    border-radius: 10px;   
+   /* box-shadow: 10px 10px 10px 10px rgba(36, 24, 6, 0.719);*/
+}
+.container{
+    display:grid;
+    justify-content: center;
+    background-image: url(/assets/img/fondo-lineas-dinamicas-estilo-papel_23-2149008629.avif);
+    background-repeat: no-repeat;
+    /*/assets/img/Presentación\ Portafolio\ Creativo\ Artístico\ Colorido\ \(1\).png*/
+    background-size: cover;
+    height: calc(74vh);
+    gap: 10px;
+}
+.saludo{
+    /*display: grid;*/
+    align-items: self-start;
+    margin-top: 5%;
+    margin-left:-10%;
+    
+    /*position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;*/
+    /*left: 150px;*/
+    color: rgba(236, 235, 238, 0.986);
+}
+.saludo h1{
+    margin-left: 120px;
+    /*display: grid;
+    /*justify-content: center;*/
+    /*margin-bottom: 20%;*/
+    /*position: relative;
+    top: 50px;
+    right: 0;
+    bottom: 0;*/
+    /*left: 150px;*/
+   /* color: rgba(236, 235, 238, 0.986);*/
+}
+.saludo span{
+    color: var(--text-color);
+    margin-top: 25px;
+    margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+.mensaje{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 16px;
+}
+.des-cv{
+    display: grid;
+    align-items: self-start;
+    justify-content: center;
+}
+.des-hv{
+    width: 150px;
+    height: 40px;
+    border:none;
+}
+.container-button-menu{
+    visibility: visible;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 90px;
+
+}
+.cerrar{
+    display:none;
+}
+
+@media(max-width: 480px){
+    /*.container-button-menu{
+        display: inline-block;
+    }
+    /*.container:shadow{
+        cursor: pointer;
+    }*/
+    /*.cerrar{
+        display:block;
+        position:absolute;
+        top: 20px;
+        right: 15px;
+        bottom: 0;
+    }*/
+
+
+   /* .container-button-cerrar{
+        position: absolute;
+        top: 15px;
+        right: 0;
+        bottom: 0;
+        left: end;
+        /*border: 2px solid red;*/
+       /* height: 30px;
+        width: 30px;
+        
+    }
+    .button-close{
+        position: flex;
+        height: auto;
+        background-color: aquamarine;
+    }*/
+    /*.men-hijo{
+       width: 100%;
+       height: 50vh;
+       background-color: rgb(22, 22, 29);
+       position: absolute;
+       top: -100vh;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       display: flex;
+       flex-direction: column;
+       align-content:flex-start;
+       justify-content: flex-start;
+    }*/
+    
+    .saludo h1{
+        margin-left:20px;
+        font-size: 20px;
+        padding: 30px;
+    }
+    .saludo span{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .mensaje{
+        padding-top: 0;
+        font-size: 14px;
+    }
+    
+}

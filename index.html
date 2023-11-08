@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="he__nav"> 
+            <a class="nav__logo" href="#home">DB</a>
+            <div class="nav__centro">
+                <button id="btnCerrar" class="head__btn boton--close">
+                    <i class='bx bx-x'></i>
+                </button>
+                <ul class="menu"> 
+                    <li class="menu-item"><a href="#principal" class="link__menu">inicio</a></li>
+                    <li class="menu-item"><a href="#portafolio" class="link__menu">servicios</a></li>
+                    <!--<li class="menu-item"><a href="#proyecto" class="link__menu">proyectos</a></li>-->
+                    <li class="menu-item"><a href="#contacto" class="link__menu">contactenos</a></li>
+                    <li class="menu-item"><a href="#about" class="link__menu">hacerca de...</a></li>
+                </ul>
+            </div>
+            <button class="header__btn btn--open">
+                <i class='bx bx-menu'></i>
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="principal" class="principal">
+            <div class="container">
+                <h1 class="title">FULLSTACK</h1>
+                <h2 class="saludo subtitulo">¡Hola!, soy <br><span class="nombre">Durlandy Blandón Castaño</span></h2>
+                <div class="principal__image">
+                    <img src="/assets/img/img-logo.png" alt="DB">
+                </div>
+                <p class="frase parrafo">"La pasión por el <strong>desarrollo web</strong> y <strong>aplicaciones</strong> es el motor que impulsa la innovación digital, transformando ideas en experiencias interactivas que conectan al mundo."</p>
+                <a class="hv" href="/assets/archivos/Hoja+de+Vida+durlandy+(1).pdf" download="Hoja de vida">Descargar CV</a>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h1 class="title">HACERCA DE MI ...</h1>   
+                <p class="frase parrafo">Soy,Tecnologo en Sistemas Informaticos, FullStack, poseo habilidades en desarrollo web tanto estatico como dinamico, interactuando con herramientas de desarrollo y control como JavaScript, CSS, Html, Git, GitHub, React, Node, ademas soy una persona creativa, emprendedora, buscando oportunidades donde puede adquirir mas conocimientos enfrentando retos constantes y asi poder servirle a empresas o personas a mejorar o crear un enfoque en el mundo digital.</p>
+        </section>
+        <section id="portafolio" class="portafolio">
+            <div class="container">
+                <h1 class="title">PORTAFOLIO</h1>
+                <div class="portafolio__logo">
+                    <div>
+                        <h2 class="herramienta">HTML</h2>
+                        <img src="/assets/img/html-5-icon-2.jpg" alt="html">
+                    </div>
+                    <div>
+                        <h2 class="herramienta">JavaScript</h2>
+                        <img src="/assets/img/3d-javascript-logo-design-free-png.webp" alt="js">
+                    </div>
+                    <div>
+                        <h2 class="herramienta">CSS</h2>
+                        <img src="/assets/img/css3-1841590_640.webp" alt="js">
+                    </div>
+                    <div>
+                        <h2 class="herramienta">Git</h2>
+                        <img src="/assets/img/git.webp" alt="js">
+                    </div>
+                    <div>
+                        <h2 class="herramienta">GitHub</h2>
+                        <img src="/assets/img/github.jpg" alt="js">
+                    </div>
+                    <div>
+                        <h2 class="herramienta">SQL</h2>
+                        <img src="/assets/img/sql.jpg" alt="js">
+                    </div>
+                    <div>
+                        <h2 class="herramienta">Asesoria</h2>
+                        <img src="/assets/img/asesorias.jpg" alt="js">
+                    </div>
+                    <div>
+                        <h2 class="herramienta">Desarrollo</h2>
+                        <img src="/assets/img/desarrollador.jpg" alt="js">
+                    </div>
+                    <div>
+                        <h2 class="herramienta">Program...</h2>
+                        <img src="/assets/img/programador web.jpg" alt="js">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h1 class="title">contacto</h1>
+                <h2 class="saludo subtitulo">Por favor diligencie los siguientes datos</h2>
+                <form id="form" class="contact__form">
+                    <div class="label__input">
+                      <label for="name"><i class='bx bxs-user'></i></label>
+                      <input type="text" id="name" placeholder="Nombre" name="name">
+                    </div>
+          
+                    <div class="label__input">
+                      <label for="email"><i class='bx bx-at'></i></label>
+                      <input type="email" id="email" placeholder="Correo" name="email">
+                    </div>
+          
+                    <div>
+                      <label for="message">Mensaje</label> <br>
+                      <textarea name="message" id="message" rows="10"></textarea>
+                    </div>
+                    <button class="contact__btn" type="submit">Enviar</button>
+                </form>
+                
+            </div>
+        </section>
+
+        <section id="footer" class="footer">
+            <div class="container">
+                <h1 class="title">FULLSTACK</h1>
+                <h2 class="saludo subtitulo">¡Hola!, soy <br><span>Durlandy Blandón Castaño</span></h2>
+                <p class="frase parrafo">"La pasión por el <strong>desarrollo web</strong> y <strong>aplicaciones</strong> es el motor que impulsa la innovación digital, transformando ideas en experiencias interactivas que conectan al mundo."</p>
+                <P></P>
+                <button class="des-hv" type="button">Descargar CV</button>
+            </div>
+        </section>
+    </main>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
