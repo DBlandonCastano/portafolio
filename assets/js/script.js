@@ -59,30 +59,48 @@ document.addEventListener('keydown', function (e) {
 
   const form = document.getElementById('form')
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault()
-    
-    //console.log(this.elements)
-   // const formData = new FormData(this)
+form.addEventListener('submit', function (e) {
+  e.preventDefault()
+
   const input = this.elements
-  const dataForm={
-      name: formData.get('name'),
-      email: formData.get('email'),
-      message: formData.get('message')
+
+  const dataForm = {
+    nombre: input.name.value,
+    correo: input.email.value,
+    mensaje: input.message.value
   }
-    console.log(dataForm)
-  
-    // console.log(e.target.elements)
-   // const input = e.target.elements
-  
-   // console.log({
-     // name: input.name.value,
-      //email: input.email.value,
-      //message: input.message.value
-    //})
 
+  const URL = 'https://formsubmit.co/ajax/'
+  const email = 'durlandyb@gmail.com'
 
+  // CRUD -> Create, Read, Update, Delete
+  // verbos:  POST,   GET,  PUT,    DELETE
+
+  fetch(URL + email, {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify(dataForm)
   })
+    .then(response => response.json())
+    .then(data => {
+      document.querySelector('.message--success').classList.remove('hidden')
+      form.reset()
+
+      setTimeout(() => {
+        document.querySelector('.message--success').classList.add('hidden')
+      }, 3000)
+    })
+    .catch(error => {
+      document.querySelector('.message--error').classList.remove('hidden')
+
+      setTimeout(() => {
+        document.querySelector('.message--error').classList.add('hidden')
+      }, 3000)
+    })
+})
  /* const URL='https://formsubmit.co/ajax/'
   const email='durlandyb@gmail.com'
   // https://github.com/github/fetch
