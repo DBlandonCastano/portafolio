@@ -10,6 +10,7 @@
     
 </head>
 <body>
+    <div class="progress"></div>
     <header class="header">
         <nav class="he__nav"> 
             <a class="nav__logo" href="#home">DB</a>
@@ -18,11 +19,11 @@
                     <i class='bx bx-x'></i>
                 </button>
                 <ul class="menu"> 
-                    <li class="menu-item"><a href="#principal" class="link__menu">inicio</a></li>
+                    <li class="menu-item"><a href="#principal" class="link__menu active">inicio</a></li>
+                    <li class="menu-item"><a href="#about" class="link__menu">acerca de...</a></li>
                     <li class="menu-item"><a href="#portafolio" class="link__menu">servicios</a></li>
                     <!--<li class="menu-item"><a href="#proyecto" class="link__menu">proyectos</a></li>-->
                     <li class="menu-item"><a href="#contacto" class="link__menu">contactenos</a></li>
-                    <li class="menu-item"><a href="#about" class="link__menu">hacerca de...</a></li>
                 </ul>
             </div>
             <button class="header__btn btn--open">
@@ -33,18 +34,20 @@
     <main class="main">
         <section id="principal" class="principal">
             <div class="container">
-                <h1 class="title">FULLSTACK</h1>
+                <h1 class="titleprincipal">FULLSTACK</h1>
                 <h2 class="saludo subtitulo">¡Hola!, soy <br><span class="nombre">Durlandy Blandón Castaño</span></h2>
                 <div class="principal__image">
                     <img src="/assets/img/img-logo.png" alt="DB">
                 </div>
                 <p class="frase parrafo">"La pasión por el <strong>desarrollo web</strong> y <strong>aplicaciones</strong> es el motor que impulsa la innovación digital, transformando ideas en experiencias interactivas que conectan al mundo."</p>
-                <a class="hv" href="/assets/archivos/Hoja+de+Vida+durlandy+(1).pdf" download="Hoja de vida">Descargar CV</a>
+                <div class="hv">
+                    <a href="/assets/archivos/Hoja+de+Vida+durlandy+(1).pdf" download="Hoja de vida">Descargar CV</a>
+                </div> 
             </div>
         </section>
         <section id="about" class="about">
             <div class="container">
-                <h1 class="title">HACERCA DE MI ...</h1>   
+                <h1 class="title">ACERCA DE MI ...</h1>   
                 <p class="frase parrafo">Soy,Tecnologo en Sistemas Informaticos, FullStack, poseo habilidades en desarrollo web tanto estatico como dinamico, interactuando con herramientas de desarrollo y control como JavaScript, CSS, Html, Git, GitHub, React, Node, ademas soy una persona creativa, emprendedora, buscando oportunidades donde puede adquirir mas conocimientos enfrentando retos constantes y asi poder servirle a empresas o personas a mejorar o crear un enfoque en el mundo digital.</p>
         </section>
         <section id="portafolio" class="portafolio">
@@ -92,8 +95,8 @@
         </section>
         <section id="contacto" class="contacto">
             <div class="container">
-                <h1 class="title">contacto</h1>
-                <h2 class="saludo subtitulo">Por favor diligencie los siguientes datos</h2>
+                <h1 class="title__contacto">Contacto</h1>
+                <h2 class="saludo subtitulo__contacto">Por favor diligencie los siguientes datos</h2>
                 <form id="form" class="contact__form">
                     <div class="label__input">
                       <label for="name"><i class='bx bxs-user'></i></label>
@@ -117,11 +120,7 @@
 
         <section id="footer" class="footer">
             <div class="container">
-                <h1 class="title">FULLSTACK</h1>
-                <h2 class="saludo subtitulo">¡Hola!, soy <br><span>Durlandy Blandón Castaño</span></h2>
-                <p class="frase parrafo">"La pasión por el <strong>desarrollo web</strong> y <strong>aplicaciones</strong> es el motor que impulsa la innovación digital, transformando ideas en experiencias interactivas que conectan al mundo."</p>
-                <P></P>
-                <button class="des-hv" type="button">Descargar CV</button>
+               <p>2023, Author Durlandy Blandon Castaño</p>
             </div>
         </section>
     </main>

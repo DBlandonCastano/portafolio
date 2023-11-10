@@ -61,23 +61,65 @@ document.addEventListener('keydown', function (e) {
 
   form.addEventListener('submit', function (e) {
     e.preventDefault()
-  
-    const formData = new FormData(this)
-  
-    console.log({
+    
+    //console.log(this.elements)
+   // const formData = new FormData(this)
+  const input = this.elements
+  const dataForm={
       name: formData.get('name'),
       email: formData.get('email'),
       message: formData.get('message')
-    })
+  }
+    console.log(dataForm)
   
     // console.log(e.target.elements)
-    const input = e.target.elements
+   // const input = e.target.elements
   
-    console.log({
-      name: input.name.value,
-      email: input.email.value,
-      message: input.message.value
-    })
-  
-  
+   // console.log({
+     // name: input.name.value,
+      //email: input.email.value,
+      //message: input.message.value
+    //})
+
+
   })
+ /* const URL='https://formsubmit.co/ajax/'
+  const email='durlandyb@gmail.com'
+  // https://github.com/github/fetch
+  fetch("URL + email", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          name: "FormSubmit",
+          message: "I'm from Devro LABS"
+      })
+  })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.log(error));*/
+
+
+
+
+    // BOM
+const html = document.documentElement
+
+// console.log(html.scrollHeight) // Altura de la página
+// console.log(html.clientHeight) // Altura de la ventana
+// console.log(html.scrollTop) // Altura que se ha desplazado el scroll
+
+      const progress = document.querySelector('.progress')
+
+      window.addEventListener('scroll', function (e) {
+      const alturaPagina = html.scrollHeight - html.clientHeight
+      
+      const scrollActual = html.scrollTop
+      
+      const progreso = scrollActual / alturaPagina
+      
+      progress.style.width = Math.round(progreso * 100) + '%'
+      
+      })
