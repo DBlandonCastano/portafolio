@@ -340,7 +340,26 @@
         z-index: 101;
         
       }
-      @media (min-width: 768px) {
+      .message--success {
+        background-color: rgb(205 236 197);
+        color: rgb(88 140 74);
+        padding: 10px;
+        display: inline-block;
+      }
+      
+      .message--error {
+        background-color: rgb(255 205 205);
+        color: rgb(140 74 74);
+        padding: 10px;
+        display: inline-block;
+      }
+      
+      .message--success.hidden,
+      .message--error.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      @media (min-width: 767px) {
         .boton--close{
           display: none;
         }
